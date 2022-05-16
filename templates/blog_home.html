@@ -1,7 +1,6 @@
-<<<<<<< Updated upstream
-{% extends 'base.html' %}
-=======
 {% extends "base.html" %}
+{% block title %}Blog{% endblock %}
+
 {% block page_content %}
 <div class="col-md-8 offset-md-2">
     <h1>Blog</h1>
@@ -11,6 +10,7 @@
     <small>
         | By: {{ post.author.username }}
         {{ post.created_on.date }} |&nbsp;
+        | Last modified: {{post.last_modified }}|
         Categories:&nbsp;
         {% for category in post.categories.all %}
         <a href="{% url 'blog-category' category.name %}">
@@ -18,21 +18,15 @@
         </a>&nbsp;
         {% endfor %}
     </small>
+
     <p>{{ post.body | slice:":700" }}...</p>
+    {% if user.is_authenticated %}
+
+    <a href="{% url 'update-post' post.pk %}"><button class="btn btn-warning">Edit</button></a>
+    <a href="{% url 'delete-post' post.pk %}"><button class="btn btn-danger">Delete</button></a>
+    <hr/>
+    {% endif%}
+
     {% endfor %}
 </div>
-{% endblock %}
->>>>>>> Stashed changes
-
-{% block content %}
-<h1> Posts</h1>
-
-<ul>
-{% for post in object_list %}
-    <li><a href="{% url 'blog-detail' post.pk %}">{{ post.title }}</a> - {{ post.author.username }}
-        <br/>
-        {{ post.body }}</li>
-{% endfor %}
-</ul>
-
 {% endblock %}
