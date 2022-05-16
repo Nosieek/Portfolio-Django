@@ -16,10 +16,14 @@
     </small>
     <p>{{ post.body | linebreaks }}</p>
     {% if user.is_authenticated %}
+    {% if user.is_staff %}
+
     <a href="{% url 'update-post' post.pk %}"><button class="btn btn-warning">Edit</button></a>
     <a href="{% url 'delete-post' post.pk %}"><button class="btn btn-danger">Delete</button></a>
     <hr/>
     {% endif %}
+    {% endif %}
+
 <!--    <h3>Leave a comment:</h3>-->
 <!--    <form action="/blog/{{ post.pk }}/" method="post">-->
 <!--        {% csrf_token %}-->
