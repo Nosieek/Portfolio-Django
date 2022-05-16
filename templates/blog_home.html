@@ -1,4 +1,28 @@
+<<<<<<< Updated upstream
 {% extends 'base.html' %}
+=======
+{% extends "base.html" %}
+{% block page_content %}
+<div class="col-md-8 offset-md-2">
+    <h1>Blog</h1>
+    <hr>
+    {% for post in object_list %}
+    <h2><a href="{% url 'blog-detail' post.pk%}">{{ post.title }}</a></h2>
+    <small>
+        | By: {{ post.author.username }}
+        {{ post.created_on.date }} |&nbsp;
+        Categories:&nbsp;
+        {% for category in post.categories.all %}
+        <a href="{% url 'blog-category' category.name %}">
+            {{ category.name }}
+        </a>&nbsp;
+        {% endfor %}
+    </small>
+    <p>{{ post.body | slice:":700" }}...</p>
+    {% endfor %}
+</div>
+{% endblock %}
+>>>>>>> Stashed changes
 
 {% block content %}
 <h1> Posts</h1>
