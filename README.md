@@ -12,12 +12,9 @@ Django templates, forms etc, Bootstrap5, HTML5, SQLite
 To get this project up and running locally on your computer:
 
 1.Prerequisites
-  - Python 3.5 +
-  - Python Virtual Environments
+  - [Python3](https://www.python.org/downloads/) Python 3.5 + 
+  - [Python venv](https://docs.python.org/3/library/venv.html) Python Virtual Environments
 
-Ustawienie homepage p1 proejekt
-  - [Python3](https://www.python.org/downloads/)
-  - [Python venv](https://docs.python.org/3/library/venv.html)
   
    ```
    git clone https://github.com/Nosieek/Portfolio-Django.git
