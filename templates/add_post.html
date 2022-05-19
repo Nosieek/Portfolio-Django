@@ -14,6 +14,11 @@
             <button class="btn btn-primary">Post</button>
         </form>
     </div>
+    <script>
+        var name_user = "{{ user.id }}";
+        document.getElementById("id").value = name_user;
+
+    </script>
     {% else %}
     You are not allowed here!
     {% endif %}
