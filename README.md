@@ -1,26 +1,25 @@
 # Django Blog
-Basic blog site written in Django
+Overview
 ----
-This web application creates an very basic blog site using Django. The site allows any logged in user to add posts, category and will in future can add comment via a forms. Any user can list all bloggers, all blogs, and detail for bloggers and blogs (including comments for each blog).
-
+This web application creates every basic blog site using Django. The site allows any logged in user to add posts, category. Any user can list all bloggers, all blogs, and detail for bloggers and blogs.
+#Techsite
+Django templates, forms etc, Bootstrap5, HTML5, SQLite
 ## Quick Start
 
 To get this project up and running locally on your computer:
-1. Requirements
-  - a Laptop
-  - Text Editor or IDE (eg. vscode, PyCharm)
-  - Python 3.0 +
-  - Django 4.0+
 
-2. Install Python and Pipenv, I recommend using a Python virtual environment.
+1.Prerequisites
+  - Python 3.5 +
+  - Python Virtual Environments
+
+Ustawienie homepage p1 proejekt
   - [Python3](https://www.python.org/downloads/)
+  - [Python venv](https://docs.python.org/3/library/venv.html)
   
-
-  - [Pipenv](https://pipenv-es.readthedocs.io/es/stable/)
-
-3. Assuming you have Python setup, run the following commands (if you're on Windows you may use `py` or `py -3` instead of `python3` to start Python):
    ```
-   source venv/bin/activate - (This is active virtual environment) 
+   git clone https://github.com/Nosieek/Portfolio-Django.git
+   python3 -m venv venv
+   source venv/bin/activate 
    pip3 install -r requirements.txt
    python3 manage.py makemigrations
    python3 manage.py migrate
@@ -36,3 +35,4 @@ To get this project up and running locally on your computer:
  Authors Dashboard Page
 :-------------------------:
 ![Screenshot 25-05-2022  User view of the blog](https://github.com/Nosieek/Portfolio-Django/blob/main/home_page/static/img/user_view.png)
+![Screenshot 25-05-2022  Staff view of the blog](https://github.com/Nosieek/Portfolio-Django/blob/main/home_page/static/img/staff_view.png)
