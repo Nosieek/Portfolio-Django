@@ -35,7 +35,7 @@ Ustawienie homepage p1 proejekt
 
 ## Screenshots
 
- Authors Dashboard Page
+Blog Page
 :-------------------------:
 ![Screenshot 25-05-2022  User view of the blog](https://github.com/Nosieek/Portfolio-Django/blob/main/home_page/static/img/user_view.png)
 ![Screenshot 25-05-2022  Staff view of the blog](https://github.com/Nosieek/Portfolio-Django/blob/main/home_page/static/img/staff_view.png)
