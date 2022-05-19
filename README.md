@@ -2,8 +2,10 @@
 Overview
 ----
 This web application creates every basic blog site using Django. The site allows any logged in user to add posts, category. Any user can list all bloggers, all blogs, and detail for bloggers and blogs.
+
 #Techsite
 Django templates, forms etc, Bootstrap5, HTML5, SQLite
+
 ## Quick Start
 
 To get this project up and running locally on your computer:
