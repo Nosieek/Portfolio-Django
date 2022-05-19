@@ -4,7 +4,7 @@
 
 <div class="col-md-8 offset-md-2">
     {% if user.is_authenticated %}
-    {% if user.is_staff %}
+    {% if user.is_staff or post.author.id == user.id %}
     <h1>Detele your post:</h1>
     <br/>
     <h2>Post to delete: {{ post.title }}</h2>
